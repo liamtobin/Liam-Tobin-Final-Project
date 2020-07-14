@@ -1,0 +1,1 @@
+console.log(`the js file is linked`);
