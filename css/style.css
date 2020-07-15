@@ -383,3 +383,140 @@ h2 {
     top: -220px;
     height: 300px;
 }
+
+.bg-box {
+    height: 600px;
+    background: url('../images/Assisted-Yoga.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+
+.shortah {
+    height: 150px;
+    overflow: visible;
+}
+
+.pyy-5 {
+    padding-top: 125px;
+}
+
+.no-br {
+    border-radius: 0 !important;
+}
+
+.wow-omg-huge-photo-wtf {
+    height: auto;
+    width: 150px;
+    background: #DDCBC0;
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+}
+
+.frex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.frex p {
+    position: relative;
+    top: -60px;
+}
+
+.seize {
+    font-size: 16px;
+}
+
+.blogg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.blogg img {
+    height: 250px;
+    width: auto;
+}
+
+.blogg p {
+    font-family: 'poppins', sans-serif;
+    color: #353638;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+}
+
+.blogg h3 {
+    font-family: 'optima', sans-serif;
+    font-size: 19px;
+    width: 50%;
+}
+
+a {
+    color: #353638;
+}
+
+/* .blogg a {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #DDCBC0;
+} */
+
+.centre {
+    text-align: center;
+
+}
+
+.beige {
+    background: #F4F2EF;
+}
+
+.flex {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.weight {
+    font-weight: 300;
+    color: #353638;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.centre h4 {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: none;
+}
+
+.flexy-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+}
+
+.link-footer {
+    font-family: 'Mukta', sans-serif;
+    color: #353638;
+    font-size: 16px;
+    line-height: 31px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+
+.underliney {
+    border-bottom: 2px solid #DDCBC1;
+    display: inline-block;
+}
