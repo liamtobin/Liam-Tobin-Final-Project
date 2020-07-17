@@ -18,16 +18,19 @@
 <body>
     <header>
         <div class="announcement">
-            <span>ANNOUNCEMENT TEXT WILL LIVE HERE</span>
+            <span>announcement text will live here</span>
         </div>
     </header>
     <div class="hero-section">
-        <section class="mobile-header">
+        <!-- Mobile Navbar -->
+        <section class="mobile-header d-xl-none">
             <div class="logo">
                 <img src="./images/YTY-logo.svg" alt="Yoga to You Logo">
             </div>
             <div class="hamburger-menu" id="menu-trigger">
-                <img src="images/588a64e0d06f6719692a2d10.png" alt="Side Menu Button">
+                <button id="menu-trigger">
+                    <img src="images/588a64e0d06f6719692a2d10.png" alt="Side Menu Button">
+                </button>
             </div>
         </section>
         <div class="hero-text">
@@ -36,223 +39,344 @@
                 services and why we're great!</p>
             <button class="basic-button">CALL TO ACTION</button>
         </div>
+        <!-- Desktop Navbar -->
+        <div class="container-fluid d-none d-sm-none d-md-none d-lg-none d-xl-block">
+            <div class="row">
+                <div class="header-flex col-12" id="header-desk">
+                    <div class="flex-left">
+                        <a href="#">schedule</a>
+                        <a href="#">about</a>
+                        <a href="#">training</a>
+                        <a href="#">corporate</a>
+                    </div>
+                    <div class="desk-logo">
+                        <img class="pr-5" src="./images/YTY-logo.svg" alt="Yoga to You Logo">
+                    </div>
+                    <div class="flex-left">
+                        <a href="#">private</a>
+                        <a href="#">register</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nowhere" id="modal-menu">
+                    <div class="push-x">
+                        <a href="#" class="pr-4" id="menu-close">X</a>
+                    </div>
+                    <div class="modal-menu-links pb-4">
+                        <a href="#">schedule</a>
+                        <a href="#">about</a>
+                        <a href="#">training</a>
+                        <a href="#">corporate</a>
+                        <a href="#">private</a>
+                        <a href="#">register</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                    </div>
+            </div>
+        </div>
     </div>
     <div class="flexy">
         <div class="mini-jumbotron">
-            <h1 class="optima">Intro Offer!</h1>
+            <h1 class="optima right-line">Intro Offer!</h1>
             <p>Book your first Live Interactive Class with Yoga to You for only $65!</p>
             <button class="basic-button">BOOK NOW</button>
         </div>
     </div>
-    <div class="offset-grid">
-        <ul>
-            <li class="left-img">
-                <!-- <img src="images/left-offset-grid.png" alt="woman excitedly catfishing people on Grindr while exercising on a stationary bike."> -->
-            </li>
-            <li class="right-img">
-                <!-- <img src="images/right-offset-grid.png" alt="Meditative fun house mirrors"> -->
-            </li>
-        </ul>
-    </div>
-    <div class="second-jumbo">
-        <h4>About</h4>
-        <h2>Who We Are</h2>
-        <p>Yoga To You is a proud affiliate of Power Yoga Canada! We are your mobile wellness service, specializing in
-            corporate offices and customized classes. Our promise is simple: Yoga for everyone everywhere.</p>
-        <P>We believe that our yoga practice and meditation will give you tangible tools to excel in your personal and
-            professional life. Our intention is to elevate our community from mediocrity to greatness.</P>
-        <button>MEET OUR TEAM</button>
+    <div class="container-fluid">
+        <div class="row align">
+            <div class="offset-grid col-sm-8 pr-2 col-lg-5">
+                <ul>
+                    <li class="left-img">
+                        <!-- <img src="images/left-offset-grid.png" alt="woman excitedly catfishing people on Grindr while exercising on a stationary bike."> -->
+                    </li>
+                    <li class="right-img">
+                        <!-- <img src="images/right-offset-grid.png" alt="Meditative fun house mirrors"> -->
+                    </li>
+                </ul>
+            </div>
+            <div class="second-jumbo col-sm-8 pl-2 col-lg-5">
+                <h4>About</h4>
+                <h2>Who We Are</h2>
+                <p>Yoga To You is a proud affiliate of Power Yoga Canada! We are your mobile wellness service,
+                    specializing in
+                    corporate offices and customized classes. Our promise is simple: Yoga for everyone everywhere.</p>
+                <P>We believe that our yoga practice and meditation will give you tangible tools to excel in your
+                    personal and
+                    professional life. Our intention is to elevate our community from mediocrity to greatness.</P>
+                <button>MEET OUR TEAM</button>
+            </div>
+        </div>
     </div>
     <div class="wrapper">
-        <section class="services container">
+        <section class="services pb-5 container">
             <h4>services</h4>
             <h2>What We Offer</h2>
-            <div class="service-grid">
-                <div class="grid-item">
-                    <img src="images/teacher-training.png" alt="">
-                    <div class="title-wrap">
-                        <h3>Teacher Training</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="service-grid mx-auto">
+                        <div class="grid-item">
+                            <img src="images/teacher-training.png" alt="">
+                            <div class="title-wrap mb-2">
+                                <h3>Teacher Training</h3>
+                            </div>
+                            <p>This will be text speaking to this particular service box. Who is this service for and
+                                why is
+                                it
+                                beneficial.</p>
+                            <button>learn more</button>
+                        </div>
                     </div>
-                    <p>This will be text speaking to this particular service box. Who is this service for and why is it
-                        beneficial.</p>
-                    <button>learn more</button>
+                    <div class="service-grid mx-auto">
+                        <div class="grid-item">
+                            <img src="images/corporate-yoga.png" alt="">
+                            <div class="title-wrap mb-2">
+                                <h3>Corporate Yoga</h3>
+                            </div>
+                            <p>This will be text speaking to this particular service box. Who is this service for and
+                                why is it
+                                beneficial.</p>
+                            <button>learn more</button>
+                        </div>
+                    </div>
+                    <div class="service-grid mx-auto">
+                        <div class="grid-item">
+                            <img src="images/online-classes.png" alt="">
+                            <div class="title-wrap mb-2">
+                                <h3>Online Classes</h3>
+                            </div>
+                            <p>This will be text speaking to this particular service box. Who is this service for and
+                                why is it
+                                beneficial.</p>
+                            <button>learn more</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="service-grid">
-                <div class="grid-item">
-                    <img src="images/corporate-yoga.png" alt="">
-                    <div class="title-wrap">
-                        <h3>Corporate Yoga</h3>
-                    </div>
-                    <p>This will be text speaking to this particular service box. Who is this service for and why is it
-                        beneficial.</p>
-                    <button>learn more</button>
-                </div>
-            </div>
-            <div class="service-grid">
-                <div class="grid-item">
-                    <img src="images/online-classes.png" alt="">
-                    <div class="title-wrap">
-                        <h3>Online Classes</h3>
-                    </div>
-                    <p>This will be text speaking to this particular service box. Who is this service for and why is it
-                        beneficial.</p>
-                    <button>learn more</button>
-                </div>
-            </div>
-        </section>
     </div>
-    <div class="d-flex flex-wrap justify-content-around flex-fill video-space pink">
-        <div class="jumbotron jumbotron-fluid px-4 pink">
-        <p class="lead poppins mb-n2 svulf">YOUR CLASS</p>
-        <h1 class="display-4 optima underline-w mt-3 exp">The Experience</h1>
-        <p class="mukta">Our practice is for everybody. Expect a 2-5 min meditation, followed by your 55 min class where you will get
-            centered, wake up, and create vitality in your body. You will build heat, twist and rinse... where we will
-            then take you through rejuvenation, ending in deep rest.</p>
-        </div>
-            <div class="flex-item mt-n3">
+    </section>
+    </div>
+    <div class="container-fluid video-space pink">
+        <div class="row">
+            <div class="jumbotron jumbotron-fluid col-sm-8 px-4 mx-5 col-lg-4 pink">
+                <p class="lead poppins mb-n2 svulf">YOUR CLASS</p>
+                <h1 class="display-4 optima underline-w mt-3 exp">The Experience</h1>
+                <p class="mukta">Our practice is for everybody. Expect a 2-5 min meditation, followed by your 55 min
+                    class
+                    where you will get
+                    centered, wake up, and create vitality in your body. You will build heat, twist and rinse... where
+                    we
+                    will
+                    then take you through rejuvenation, ending in deep rest.</p>
+            </div>
+            <div class="flex-item w-75 mx-auto col-md-5 col-lg-2">
                 <h1>16</h1>
                 <p class="poppins">BILLION DOLLARS</p>
-                <p class="mukta">lost in productivity per year due to Canadian workers calling in sick as a result of mental health
+                <p class="mukta w-75 mx-auto">lost in productivity per year due to Canadian workers calling in sick as a
+                    result of mental
+                    health
                     issues.</p>
             </div>
-            <div class="flex-item mt-n3">
+            <div class="flex-item w-75 mx-auto col-md-5 col-lg-2">
                 <h1>61</h1>
                 <p class="poppins">PERCENT</p>
-                <p class="mukta">of employees are burnt out on the job. 1 in 4 employees will leave their job due to work related
+                <p class="mukta w-75 mx-auto">of employees are burnt out on the job. 1 in 4 employees will leave their
+                    job due to work
+                    related
                     stress.</p>
             </div>
-            <div class="flex-item mt-n3">
+            <div class="flex-item w-75 mx-auto col-md-5 col-lg-2">
                 <h1>91</h1>
                 <p class="poppins">PERCENT</p>
-                <p class="mukta">of workers at companies that support well-being efforts say they feel motivated to do their best.</p>
+                <p class="mukta w-75 mx-auto">of workers at companies that support well-being efforts say they feel
+                    motivated to do their
+                    best.</p>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid shortah">
-            <iframe  class="pawsition" width="100%" height="100%" src="https://www.youtube.com/embed/twDBxdmjCA8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container-fluid shortah">
+        <div class="row">
+            <div class="col-sm-6 col-lg-9 mx-auto">
+                <iframe class="pawsition mx-auto" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/twDBxdmjCA8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="container-fluid bg-box">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    </div>
+    <div class="container-fluid bg-box">
+        <div class="row">
+            <div id="carouselExampleCaptions" class="carousel slide col-lg-8 mx-auto" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item pyy-5 active">
-                    <div class="jumbotron frex no-br d-block w-100">
-                        <img class="display-4 wow-omg-huge-photo-wtf" src="images/norfolk-liam-email (1).png" alt="">
-                        <p class="poppins svulf">LIAM TOBIN</p>
-                        <p class="mukta seize">This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients.</p>
+                    <div class="carousel-item pyy-5 active">
+                        <div class="jumbotron frex no-br d-block w-100">
+                            <img class="display-4 wow-omg-huge-photo-wtf" src="images/norfolk-liam-email (1).png"
+                                alt="">
+                            <p class="poppins svulf">LIAM TOBIN</p>
+                            <p class="mukta seize w-75 mx-auto">This is a testimonial from your corporate clients. This
+                                is a testimonial
+                                from your corporate clients. This is a testimonial from your corporate clients. This is
+                                a
+                                testimonial from your corporate clients. This is a testimonial from your corporate
+                                clients.
+                                This is a testimonial from your corporate clients. This is a testimonial from your
+                                corporate
+                                clients.</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item pyy-5">
-                    <div class="jumbotron frex no-br d-block w-100">
-                        <img class="display-4 wow-omg-huge-photo-wtf" src="images/norfolk-danielle-email-2-min.png" alt="">
-                        <p class="poppins svulf">DANIELLE TOBIN</p>
-                        <p class="mukta seize">This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients.</p>
+                    <div class="carousel-item pyy-5">
+                        <div class="jumbotron frex no-br d-block w-100">
+                            <img class="display-4 wow-omg-huge-photo-wtf" src="images/norfolk-danielle-email-2-min.png"
+                                alt="">
+                            <p class="poppins svulf">DANIELLE TOBIN</p>
+                            <p class="mukta seize w-75 mx-auto">This is a testimonial from your corporate clients. This
+                                is a testimonial
+                                from your corporate clients. This is a testimonial from your corporate clients. This is
+                                a
+                                testimonial from your corporate clients. This is a testimonial from your corporate
+                                clients.
+                                This is a testimonial from your corporate clients. This is a testimonial from your
+                                corporate
+                                clients.</p>
                         </div>
-                  </div>
-                  <div class="carousel-item pyy-5">
-                    <div class="jumbotron frex no-br d-block w-100">
-                        <img class="display-4 wow-omg-huge-photo-wtf" src="images/ashley-norfolk-circle-2-min.png" alt="">
-                        <p class="poppins svulf">ASHLEY TICKELL</p>
-                        <p class="mukta seize">This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients. This is a testimonial from your corporate clients.</p>
+                    </div>
+                    <div class="carousel-item pyy-5">
+                        <div class="jumbotron frex no-br d-block w-100">
+                            <img class="display-4 wow-omg-huge-photo-wtf" src="images/ashley-norfolk-circle-2-min.png"
+                                alt="">
+                            <p class="poppins svulf">ASHLEY TICKELL</p>
+                            <p class="mukta seize w-75 mx-auto">This is a testimonial from your corporate clients. This
+                                is a testimonial
+                                from your corporate clients. This is a testimonial from your corporate clients. This is
+                                a
+                                testimonial from your corporate clients. This is a testimonial from your corporate
+                                clients.
+                                This is a testimonial from your corporate clients. This is a testimonial from your
+                                corporate
+                                clients.</p>
                         </div>
-                  </div>
+                    </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                 </a>
-              </div>
             </div>
-            <div class="container">
-                <div class="blogg">
-                    <h4>on the blog</h4>
-                    <h2>Recent Posts</h2>
+        </div>
+    </div>
+    <div class="container spaaace">
+        <div class="blogg">
+            <h4>on the blog</h4>
+            <h2>Recent Posts</h2>
+        </div>
+        <div class="row pt-5">
+            <div class="col-sm-8 col-md-5 col-lg-4 blogg">
+                <img class="mb-3" src="images/blog-recent.png" alt="Leia Organa before the ear braids">
+                <p class="pt-1">AUTHOR</p>
+                <p>June 17, 2020</p>
+                <h3 class="pb-3">This is a Title That Will Probably Be This Long</h3>
+                <a href="#">
+                    <h4 class="underline">READ POST</h4>
+                </a>
+            </div>
+            <div class="col-sm-8 col-md-5 col-lg-4 blogg">
+                <img class="mb-3" src="images/blog-recent.png" alt="Leia Organa before the ear braids">
+                <p class="pt-1">AUTHOR</p>
+                <p>June 17, 2020</p>
+                <h3 class="pb-3">This is a Title That Will Certainly Be This Long</h3>
+                <a href="#">
+                    <h4 class="underline">READ POST</h4>
+                </a>
+            </div>
+            <div class="col-sm-8 col-md-5 col-lg-4 blogg">
+                <img class="mb-3" src="images/blog-recent.png" alt="Leia Organa before the ear braids">
+                <p class="pt-1">AUTHOR</p>
+                <p>June 17, 2020</p>
+                <h3 class="pb-3">This is a Title That Might Could Be This Long</h3 class="pb-3">
+                <a href="#">
+                    <h4 role="button" class="underline">READ POST</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid beige">
+        <div class="row">
+            <form class="col-sm-12 col-sm-offset-3 col-md-6 col-lg-6 centre">
+                <h4 class="underline pt-5 optima">Join Our Community</h4>
+                <div class="form-group pt-3 flex">
+                    <input type="email" class="form-control w-75" placeholder="FIRST NAME" id="name">
                 </div>
-                    <div class="row pt-5">
-                            <div class="col-sm-8 col-md-5 col-lg-4 blogg">
-                                <img class="mb-3" src="images/blog-recent.png" alt="Leia Organa before the ear braids">
-                                <p class="pt-1">AUTHOR</p>
-                                <p>June 17, 2020</p>
-                                <h3 class="pb-3">This is a Title That Will Probably Be This Long</h3>
-                                <a href="#"><h4 class="underline">READ POST</h4></a>
-                            </div>
-                            <div class="col-sm-8 col-md-5 col-lg-4 blogg">
-                                    <img class="mb-3" src="images/blog-recent.png" alt="Leia Organa before the ear braids">
-                                    <p class="pt-1">AUTHOR</p>
-                                    <p>June 17, 2020</p>
-                                    <h3 class="pb-3">This is a Title That Will Certainly Be This Long</h3>
-                                    <a href="#"><h4 class="underline">READ POST</h4></a>
-                            </div>
-                            <div class="col-sm-8 col-md-5 col-lg-4 blogg">
-                                    <img class="mb-3" src="images/blog-recent.png" alt="Leia Organa before the ear braids">
-                                    <p class="pt-1">AUTHOR</p>
-                                    <p>June 17, 2020</p>
-                                    <h3 class="pb-3">This is a Title That Might Could Be This Long</h3 class="pb-3">
-                                    <a href="#"><h4 role="button" class="underline">READ POST</h4></a>
-                            </div>
-                          </div>
-                  </div>
-                  <div class="container-fluid beige">
-                      <div class="row">  
-                    <form class="col-sm-12 col-sm-offset-3 col-md-6 col-lg-6 centre">
-                            <h4 class="underline pt-5 optima">Join Our Community</h4>
-                            <div class="form-group pt-3 flex">
-                                    <input type="email" class="form-control w-75" placeholder="FIRST NAME" id="exampleInputName1">
-                                </div>
-                                <div class="form-group flex">
-                                        <input type="email" class="form-control w-75" id="exampleInputEmail1" placeholder="EMAIL" aria-describedby="emailHelp">
-                                </div>
-                                <button type="submit" class="btn mb-5 underline poppins weight">Subscribe</button>
-                              </form>
-                              <div class="instagram col-sm-12 col-md-6 col-lg-6 mb-5">
-                                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                                    <div class="elfsight-app-72293060-d112-4df2-aff4-f34720f4fe5a"></div>
-                              </div>
-                              </div>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row">
-                            <div class="flexy-col col-sm-8 col-lg-6">
-                                <h4 class="underliney pt-3">yoga to you</h4>
-                                <p>About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here</p>
-                            </div>
-                            <div class="flexy-col col-sm-8 col-lg-2">
-                                    <h4 class="underliney pt-3">Quick Links</h4>
-                                    <a href="#" class="link-footer">Register</a>
-                                    <a href="#" class="link-footer">Refunds</a>
-                                    <a href="#" class="link-footer">Privacy Policy</a>
-                                    <a href="#" class="link-footer">Terms</a>
-                            </div>
-                            <div class="flexy-col col-sm-8 col-lg-2">
-                                    <h4 class="underliney pt-3">Navigate</h4>
-                                    <a href="#" class="link-footer">Schedule</a>
-                                    <a href="#" class="link-footer">About</a>
-                                    <a href="#" class="link-footer">Corporate</a>
-                                    <a href="#" class="link-footer">Private</a>
-                                    <a href="#" class="link-footer">Training</a>
+                <div class="form-group flex">
+                    <input type="email" class="form-control w-75" id="email" placeholder="EMAIL"
+                        aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn mb-5 underline poppins weight">Subscribe</button>
+                <div id="messages"></div>
+            </form>
+            <div class="instagram col-sm-12 col-md-6 col-lg-6 mb-5">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+                <div class="elfsight-app-72293060-d112-4df2-aff4-f34720f4fe5a"></div>
+            </div>
+        </div>
+    </div>
+    <!-- footer begins here -->
+    <div class="container-fluid spaaace">
+        <div class="row mt-4">
+            <div class="flexy-col col-sm-8 col-lg-6">
+                <h4 class="underliney pt-4">yoga to you</h4>
+                <p class="pt-4 mukta w-75">About yoga to you with SEO keywords will go here. About yoga to you with SEO
+                    keywords will go here.
+                    About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here.
+                    About yoga to you with SEO keywords will go here. About yoga to you with SEO keywords will go here
+                </p>
+            </div>
+            <div class="flexy-col col-sm-8 col-lg-2">
+                <h4 class="underliney pt-3">Quick Links</h4>
+                <a href="#" class="link-footer pt-3">Register</a>
+                <a href="#" class="link-footer">Refunds</a>
+                <a href="#" class="link-footer">Privacy Policy</a>
+                <a href="#" class="link-footer">Terms</a>
+            </div>
+            <div class="flexy-col col-sm-8 col-lg-2">
+                <h4 class="underliney pt-3">Navigate</h4>
+                <a href="#" class="link-footer pt-3">Schedule</a>
+                <a href="#" class="link-footer">About</a>
+                <a href="#" class="link-footer">Corporate</a>
+                <a href="#" class="link-footer">Private</a>
+                <a href="#" class="link-footer">Training</a>
 
-                            </div>
-                            <div class="flexy-col col-sm-8 col-lg-2">
-                                    <h4 class="underliney pt-3">connect</h4>
-                                    <a href="#" class="link-footer">Email Us</a>
-                                    <a href="#" class="link-footer">Call Us</a>
-                                    <a href="#" class="link-footer">Facebook</a>
-                                    <a href="#" class="link-footer">Instagram</a>
-                                    <a href="#" class="link-footer">Blog</a>
+            </div>
+            <div class="flexy-col col-sm-8 col-lg-2">
+                <h4 class="underliney pt-3">connect</h4>
+                <a href="#" class="link-footer pt-3">Email Us</a>
+                <a href="#" class="link-footer">Call Us</a>
+                <a href="#" class="link-footer">Facebook</a>
+                <a href="#" class="link-footer">Instagram</a>
+                <a href="#" class="link-footer">Blog</a>
 
-                            </div>
-                        </div>
-                            </div>
-        
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="lower-foot col-12">
+                <span>copyright yoga to you | 2020 | website by norfolk design co.</span>
+            </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
