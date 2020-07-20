@@ -15,6 +15,7 @@ window.onscroll = function() {scrollFunTimes()};
 function scrollFunTimes() {
   if (document.body.scrollTop > 34 || document.documentElement.scrollTop > 34) {
     document.getElementById('header-desk').classList.add('fixed', 'tranzisheewowow');
+    document.getElementById('mobile-head').classList.add('fixed-mobile', 'tranzisheewowow');
   }
 };
 // window.onscroll = function() {scrollUpFunTimes()};
@@ -24,7 +25,17 @@ function scrollFunTimes() {
 //     document.getElementById('header-desk').classList.remove('fixed', 'tranzisheewowow');
 //   }
 // };
-
+(function($) {
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.menu').fadeIn(500);
+            } else {
+                $('.menu').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
 
 const form = document.querySelector('form');
 const nameInput = document.getElementById("name");
@@ -52,7 +63,7 @@ async function handleFormSubmit(evt) {
         const response  = await fetch(formUrl, options)
 
         if (response.ok) {
-            messages.innerHTML = '<span class="success">Thanks for your submission!</span>'
+            messages.innerHTML = '<span class="success">Thanks for your submission!</span>';
         } else {
             throw new Error();
         }
