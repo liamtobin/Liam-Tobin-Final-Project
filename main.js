@@ -16,31 +16,19 @@ function scrollFunTimes() {
   if (document.body.scrollTop > 34 || document.documentElement.scrollTop > 34) {
     document.getElementById('header-desk').classList.add('fixed', 'tranzisheewowow');
     document.getElementById('mobile-head').classList.add('fixed-mobile', 'tranzisheewowow');
-  }
-};
-// window.onscroll = function() {scrollUpFunTimes()};
+  } else {
+    document.getElementById('header-desk').classList.remove('fixed', 'tranzisheewowow');
+    document.getElementById('mobile-head').classList.remove('fixed-mobile', 'tranzisheewowow');
 
-// function scrollUpFunTimes() {
-//   if (document.body.scrollTop < 35 || document.documentElement.scrollTop < 35) {
-//     document.getElementById('header-desk').classList.remove('fixed', 'tranzisheewowow');
-//   }
-// };
-(function($) {
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 50) {
-                $('.menu').fadeIn(500);
-            } else {
-                $('.menu').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);
+  };
+};
 
 const form = document.querySelector('form');
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const messages = document.getElementById("messages");
+const errors = [];
+
 
 const formUrl = "https://formspree.io/mnqgogdo";
 
@@ -51,6 +39,25 @@ async function handleFormSubmit(evt) {
         name: nameInput.value,
         email: emailInput.value
     }
+
+    // console.log(formData);
+
+    //validation of the form fields
+
+    messages.innerHTML = "";
+
+    if (nameInput.value.length === 0) {
+        errors.push("Name is required.")
+    };
+    if (!emailInput.value.length) {
+        errors.push("Email is required.")
+    }
+
+    for (let i = 0; i < errors.length; i++) {
+        const listItem = document.createElement('li');
+        listItem.innerText = errors[i];
+        messages.appendChild(listItem);
+    };
 
     try {
         messages.innerHTML = "";

@@ -5,12 +5,20 @@ body {
 }
 
  .hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg-image-hero.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/mobile-hero-image.jpg");
     height: 50%;
     background-position: center; 
     background-size: cover;
     background-repeat: no-repeat; 
     background-attachment: fixed;
+}
+
+#header-desk {
+    transition: background-color 1000ms linear;
+}
+
+#mobile-head {
+    transition: background-color 1000ms linear;
 }
 
 .announcement {
@@ -45,6 +53,7 @@ div.announcement {
     height: 30px;
     position: relative;
     /* top: 15px; */
+    margin-right: 10px;
 
 }
 
@@ -54,7 +63,7 @@ div.announcement {
     align-items: center;
     position: absolute;
     /* background-color: none; */
-    width: 95%;
+    width: 100%;
     padding: 25px 0 0 0;
     z-index: 125;
 }
@@ -666,14 +675,16 @@ a {
     /* expression: angry */
 }
 
-
-
-@media only screen and (min-width: 769px) {
+@media screen and (min-width: 769px) {
     .flexy-col {
         align-items: flex-start;
         text-align: left;
         padding: 0 60px;
         justify-content: left;;
+    }
+
+    .hero-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg-image-hero.png");
     }
 
     .flex-item {
@@ -685,8 +696,8 @@ a {
     }
 
     .mini-jumbotron {
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: row !important;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -706,4 +717,14 @@ a {
     .right-line {
         border-right: 1px solid white;;
     }
-}
+};
+
+/* @media screen and (max-width: 600px) {
+    .hero-section {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/bg-image-hero.png");
+    }
+
+    .hero-text h1 {
+        width: 70%;
+    }
+}; */
